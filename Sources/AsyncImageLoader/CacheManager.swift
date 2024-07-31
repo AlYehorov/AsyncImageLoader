@@ -5,5 +5,6 @@ public class CacheManager {
     
     public func invalidateCache() {
         ImageCacheService.shared.invalidateCache()
+        NetworkService.shared.invalidateAllCache()
     }
 }
